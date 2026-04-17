@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container py-5">
+    <div class="row align-items-center min-vh-75">
+        <div class="col-lg-8">
+            <h1 class="display-4 fw-bold mb-3">Hi, I’m Jasmine Brown</h1>
+            <h2 class="h4 text-muted mb-4">
+                Software Developer focused on building reliable business applications with C#, .NET, and SQL.
+            </h2>
+
+            <p class="lead mb-4">
+                I build and support business applications that improve workflows, solve technical problems, and help teams work more efficiently. My background includes internal application development, production support, debugging, and SQL-based solutions in enterprise environments.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 mb-5">
+                <a asp-page="/Experience" class="btn btn-primary btn-lg">View Experience</a>
+                <a asp-page="/Contact" class="btn btn-outline-secondary btn-lg">Contact Me</a>
+            </div>
+
+            <div class="mt-4">
+                <h3 class="h5 fw-semibold mb-3">Core Skills</h3>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-dark">C#</span>
+                    <span class="badge bg-dark">.NET</span>
+                    <span class="badge bg-dark">ASP.NET</span>
+                    <span class="badge bg-dark">SQL Server</span>
+                    <span class="badge bg-dark">JavaScript</span>
+                    <span class="badge bg-dark">Azure DevOps</span>
+                    <span class="badge bg-dark">Git</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
