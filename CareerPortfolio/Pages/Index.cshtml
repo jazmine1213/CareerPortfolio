@@ -23,14 +23,12 @@
 
             <div class="mt-4">
                 <h3 class="h5 fw-semibold mb-3">Core Skills</h3>
+
                 <div class="d-flex flex-wrap gap-2">
-                    <span class="badge bg-dark">C#</span>
-                    <span class="badge bg-dark">.NET</span>
-                    <span class="badge bg-dark">ASP.NET</span>
-                    <span class="badge bg-dark">SQL Server</span>
-                    <span class="badge bg-dark">JavaScript</span>
-                    <span class="badge bg-dark">Azure DevOps</span>
-                    <span class="badge bg-dark">Git</span>
+                    @foreach (var skill in Model.Skills)
+                    {
+                        <span class="badge bg-dark">@skill.Name</span>
+                    }
                 </div>
             </div>
         </div>

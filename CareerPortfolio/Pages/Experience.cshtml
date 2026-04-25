@@ -10,40 +10,14 @@
         My background includes business application development, production support, reporting, and technical problem-solving across enterprise environments.
     </p>
 
-    <div class="card shadow-sm mb-4">
-        <div class="card-body">
-            <h2 class="h4 fw-bold mb-1">Business Application Developer</h2>
-            <p class="text-muted mb-3">Blue Cross Blue Shield of Michigan | Apr 2022 – Jun 2025</p>
-            <ul class="mb-0">
-                <li>Developed and maintained internal applications supporting healthcare operations.</li>
-                <li>Troubleshot production issues by analyzing logs, stack traces, and SQL queries.</li>
-                <li>Worked with C#, ASP.NET, and SQL Server to build and enhance application features.</li>
-                <li>Collaborated with business teams to understand requirements and deliver solutions.</li>
-            </ul>
+    @foreach (var experience in Model.ExperienceEntries)
+    {
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h2 class="h4 fw-bold mb-1">@experience.JobTitle</h2>
+                <p class="text-muted mb-3">@experience.Company | @experience.DateRange</p>
+                <p class="mb-0">@experience.Description</p>
+            </div>
         </div>
-    </div>
-
-    <div class="card shadow-sm mb-4">
-        <div class="card-body">
-            <h2 class="h4 fw-bold mb-1">Associate Software Developer</h2>
-            <p class="text-muted mb-3">United Wholesale Mortgage | Apr 2021 – Apr 2022</p>
-            <ul class="mb-0">
-                <li>Supported development and maintenance of internal systems in a fast-paced environment.</li>
-                <li>Assisted with debugging and resolving application and data-related issues.</li>
-                <li>Worked with SQL queries and backend logic to support business processes.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="card shadow-sm mb-4">
-        <div class="card-body">
-            <h2 class="h4 fw-bold mb-1">Technical Writer / Reporting Analyst / IT Support</h2>
-            <p class="text-muted mb-3">Central Transport | Oct 2015 – Apr 2021</p>
-            <ul class="mb-0">
-                <li>Created documentation and reports to support business operations and decision-making.</li>
-                <li>Worked with SQL to extract and analyze data.</li>
-                <li>Provided technical support and troubleshooting for internal users.</li>
-            </ul>
-        </div>
-    </div>
+    }
 </div>
