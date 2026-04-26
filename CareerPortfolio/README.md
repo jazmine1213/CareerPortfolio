@@ -1,51 +1,106 @@
-﻿# 💼 Career Portfolio Website
+﻿# 💼 Jasmine Brown | Software Developer Portfolio
 
-This is a personal career portfolio website built using ASP.NET Core Razor Pages. The goal of this project is to showcase my professional experience, technical skills, and ongoing development work while strengthening my full-stack development skills.
+A full-stack career portfolio application built with ASP.NET Core, Razor Pages, Entity Framework Core, and SQL Server.
 
-## 🚀 Tech Stack
-
-- C#
-- ASP.NET Core (Razor Pages)
-- HTML / CSS / Bootstrap
-- (Planned) SQL Server
-- (Planned) React
-
-## 📌 Features
-
-- Home page with professional summary
-- About page highlighting experience and strengths
-- Experience page with detailed work history
-- Projects section (in progress)
-- Contact page
-
-## 🛠️ Purpose
-
-This project serves as:
-- A professional portfolio to share with recruiters and hiring managers
-- A way to refresh and strengthen my development skills
-- A foundation for building full-stack applications
-
-## 🔄 In Progress / Planned Enhancements
-
-- Build out project showcase section
-- Add database integration using SQL Server
-- Convert parts of the UI to React
-- Add dynamic content loading from an API
-- Improve UI/UX styling
-
-## 🧠 What I’m Practicing
-
-- ASP.NET Core fundamentals
-- Structuring a real-world application
-- Frontend layout and responsiveness
-- Preparing for full-stack development with React
-
-## 📫 Contact
-
-- LinkedIn: www.linkedin.com/in/jasmine-brown-4509401b0
-- GitHub: https://github.com/jazmine1213
-- Email: jas.bropwn8000@gmaill.com
+This project showcases my experience building data-driven applications, implementing CRUD functionality, and designing clean, user-focused interfaces.
 
 ---
 
-✨ This project is part of my ongoing effort to grow as a software developer and build real-world applications.
+## 🚀 Tech Stack
+
+* C#
+* ASP.NET Core (Razor Pages)
+* Entity Framework Core
+* SQL Server (LocalDB)
+* HTML / CSS / Bootstrap
+
+---
+
+## ✨ Features
+
+* Dynamic Projects, Skills, and Experience sections
+* Full CRUD functionality for Projects (Create, Edit, Delete)
+* Data persistence using EF Core and SQL Server
+* Clean, responsive UI with custom styling
+* Personal branding with hero section and headshot
+
+---
+
+## 📸 Screenshots
+
+### Home
+
+![Home](screenshots/Homepage.png)
+
+### Projects
+
+![Projects](screenshots/Projectspage.png)
+
+### Edit Project
+
+![Edit](screenshots/Editpage.png)
+
+---
+
+## 🧱 Project Phases
+
+### Phase 1: Static Portfolio
+
+* Built core pages using Razor Pages
+* Implemented layout and navigation
+
+### Phase 2: Data-Driven Application
+
+* Integrated SQL Server with EF Core
+* Created models and database schema
+* Implemented SeedData
+* Converted pages to dynamic rendering
+
+### Phase 3: CRUD Functionality
+
+* Added Create, Edit, and Delete for Projects
+* Implemented form validation
+* Connected UI to database operations
+
+### Phase 4: UI Polish & Personal Branding
+
+* Improved layout, spacing, and responsiveness
+* Designed a clean, professional UI
+* Added personal branding and headshot
+
+---
+
+## 🧠 What I Learned
+
+* Building full-stack applications with ASP.NET Core and EF Core
+* Managing data flow between UI, backend, and database
+* Implementing CRUD operations using Razor Page handlers
+* Designing clean and user-friendly interfaces
+* Structuring projects using phased development
+
+---
+
+## 🛠️ Running the Project
+
+1. Clone the repository
+2. Run migrations:
+
+```
+Add-Migration InitialCreate  
+Update-Database
+```
+
+3. Run the application
+
+The database will automatically seed with initial data.
+
+---
+
+## 📫 Contact
+
+* LinkedIn: (add your link)
+* GitHub: (your profile)
+
+---
+
+✨ This project reflects my growth as a developer and my focus on building practical, reliable software solutions.

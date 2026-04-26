@@ -5,32 +5,43 @@
 }
 
 <div class="container py-5">
-    <div class="row align-items-center min-vh-75">
-        <div class="col-lg-8">
-            <h1 class="display-4 fw-bold mb-3">Hi, I’m Jasmine Brown</h1>
-            <h2 class="h4 text-muted mb-4">
-                Software Developer focused on building reliable business applications with C#, .NET, and SQL.
-            </h2>
+    <section class="hero-section">
+        <div class="hero-content">
+            <p class="hero-eyebrow">C# • .NET • SQL Developer</p>
 
-            <p class="lead mb-4">
-                I build and support business applications that improve workflows, solve technical problems, and help teams work more efficiently. My background includes internal application development, production support, debugging, and SQL-based solutions in enterprise environments.
+            <h1 class="hero-title">Hi, I’m Jasmine Brown.</h1>
+
+            <p class="hero-subtitle">
+                I build reliable business applications that support real workflows, solve practical problems, and help teams work more efficiently.
             </p>
 
-            <div class="d-flex flex-wrap gap-3 mb-5">
-                <a asp-page="/Experience" class="btn btn-primary btn-lg">View Experience</a>
-                <a asp-page="/Contact" class="btn btn-outline-secondary btn-lg">Contact Me</a>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+                <a asp-page="/Projects" class="btn btn-accent">View Projects</a>
+                <a asp-page="/Contact" class="btn btn-outline-secondary">Contact Me</a>
             </div>
+        </div>
 
-            <div class="mt-4">
-                <h3 class="h5 fw-semibold mb-3">Core Skills</h3>
+        <div class="hero-side">
+            <img src="~/images/Headshot.JPEG" alt="Jasmine Brown" class="hero-image" />
 
-                <div class="d-flex flex-wrap gap-2">
-                    @foreach (var skill in Model.Skills)
-                    {
-                        <span class="badge bg-dark">@skill.Name</span>
-                    }
-                </div>
-            </div>
+        <div class="hero-card">
+            <h2>Currently Building</h2>
+            <p>
+                Expanding this portfolio into a full data-driven application with EF Core, SQL Server, CRUD functionality, and future React integration.
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <div class="mt-4">
+        <h3 class="h5 fw-semibold mb-3">Core Skills</h3>
+
+        <div class="d-flex flex-wrap gap-2">
+            @foreach (var skill in Model.Skills)
+            {
+                <span class="badge badge-soft">@skill.Name</span>
+            }
         </div>
     </div>
 </div>
+
