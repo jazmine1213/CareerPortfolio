@@ -4,11 +4,57 @@
     ViewData["Title"] = "Projects";
 }
 
-<div class="container py-5">
+<div class="container py-5 min-vh-75 mb-5">
     <h1 class="display-5 fw-bold mb-3">Projects</h1>
     <p class="lead text-muted mb-5">
         These projects reflect what I’m currently building and the direction I’m taking as I continue growing my full-stack development skills.
     </p>
+
+    <div class="card shadow-sm mb-5">
+        <div class="card-body">
+            <h2 class="h4 fw-bold mb-3">Add New Project</h2>
+
+            <form method="post" asp-page-handler="Create">
+                <div class="mb-3">
+                    <label asp-for="NewProject.Title" class="form-label"></label>
+                    <input asp-for="NewProject.Title" class="form-control" />
+                    <span asp-validation-for="NewProject.Title" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="NewProject.Description" class="form-label"></label>
+                    <textarea asp-for="NewProject.Description" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="NewProject.Description" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="NewProject.Status" class="form-label"></label>
+                    <input asp-for="NewProject.Status" class="form-control" />
+                    <span asp-validation-for="NewProject.Status" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="NewProject.TechStack" class="form-label"></label>
+                    <input asp-for="NewProject.TechStack" class="form-control" />
+                    <span asp-validation-for="NewProject.TechStack" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="NewProject.GitHubUrl" class="form-label"></label>
+                    <input asp-for="NewProject.GitHubUrl" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="NewProject.LiveDemoUrl" class="form-label"></label>
+                    <input asp-for="NewProject.LiveDemoUrl" class="form-control" />
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Add Project
+                </button>
+            </form>
+        </div>
+    </div>
 
     <div class="row g-4">
         @foreach (var project in Model.Projects)
@@ -34,6 +80,11 @@
                         {
                             <a href="@project.LiveDemoUrl" target="_blank">Live Demo</a>
                         }
+                        <form method="post" asp-page-handler="Delete" asp-route-id="@project.ID">
+                            <button type="submit" class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -31,6 +31,9 @@ body {
     border-radius: 999px;
 }
 
-footer {
+.footer {
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
     background-color: #ffffff;
 }
